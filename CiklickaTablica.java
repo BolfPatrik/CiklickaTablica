@@ -10,6 +10,14 @@ public static void main(String[] args) {
 		int red=0,krajreda=x-1;
         int stupac=0,krajstupca=y-1;
         int brojac=1;
+		while(red<=krajreda && stupac <=krajstupca) {
+            for(int i=krajstupca;i>=stupac;i--) {
+                tablica[krajreda][i]=brojac;
+                brojac++;  
+			}
+			krajreda--;
+		}
+
 		for(int i=0;i<x;i++) {
 			for(int j=0;j<y;j++) {
 				System.out.print(tablica[i][j]+ "\t");
