@@ -16,6 +16,10 @@ public static void main(String[] args) {
                 brojac++;  
 			}
 			krajreda--;
+			 for(int i=krajreda;i>=red;i--) {
+                tablica[i][stupac]=brojac;
+                brojac++; 
+			 }
 		}
 
 		for(int i=0;i<x;i++) {
