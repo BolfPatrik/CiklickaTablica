@@ -25,8 +25,13 @@ public static void main(String[] args) {
                 tablica[red][i]=brojac;
                 brojac++;
 		}
+		red++;
+            for(int i=red;i<=krajreda;i++) {
+                tablica[i][krajstupca]=brojac;
+                brojac++;
+			}
+		krajstupca--;
 		}
-
 		for(int i=0;i<x;i++) {
 			for(int j=0;j<y;j++) {
 				System.out.print(tablica[i][j]+ "\t");
