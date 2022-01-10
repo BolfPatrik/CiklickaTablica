@@ -20,6 +20,11 @@ public static void main(String[] args) {
                 tablica[i][stupac]=brojac;
                 brojac++; 
 			 }
+			stupac++;
+            for(int i=stupac;i<=krajstupca;i++) {
+                tablica[red][i]=brojac;
+                brojac++;
+		}
 		}
 
 		for(int i=0;i<x;i++) {
