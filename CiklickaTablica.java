@@ -14,11 +14,19 @@ public static void main(String[] args) {
             for(int i=krajstupca;i>=stupac;i--) {
                 tablica[krajreda][i]=brojac;
                 brojac++;  
+				if(brojac>x*y) {
+                	krajstupca-=1;
+                    break;
+                }
 			}
 			krajreda--;
 			 for(int i=krajreda;i>=red;i--) {
                 tablica[i][stupac]=brojac;
-                brojac++; 
+                brojac++;
+				if(brojac>x*y) {
+                	red-=1;
+                    break;
+            }
 			 }
 			stupac++;
             for(int i=stupac;i<=krajstupca;i++) {
